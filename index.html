@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>insighta-portal</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f5;
+        color: #18181b
+      }
+
+      .card {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow:0 4px 6px 1px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+      }
+
+      button {
+        background-color: #24292e;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+
+      button:hover {background-color: #1b1f23;}
+      #dashboard {display: none}
+      .data-box {
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-top: 1rem;
+        font-family: monospace;
+        word-break: break-all;
+}
+    </style>
+  </head>
+  <body>
+    <div class="card" id="login-view">
+        <h2>Insighta Portal</h2>
+        <p>Secure Backend Authentication Demo</p>
+        <button id="login-btn">Login with GitHub</button>
+    </div>
+
+    <div class="card" id="dashboard">
+        <h2>Dashboard</h2>
+        <p id="status-message">Fetching secure data...</p>
+        <div class="data-box" id="secure-data"></div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
