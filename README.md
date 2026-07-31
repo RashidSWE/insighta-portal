@@ -1,8 +1,3 @@
-Here is a clean, professional, and simple `README.md` for your Vite web portal repository. It covers everything another developer (or future you) needs to know to get the frontend running and connected to your FastAPI backend.
-
-***
-
-```markdown
 # Insighta Labs+ Web Portal
 
 This is the official web portal for Insighta Labs+. It is a lightweight, high-performance frontend built with Vite and Vanilla JavaScript. It securely connects to the Insighta Labs+ FastAPI backend using GitHub OAuth and strict cross-site cookie security.
